@@ -7,18 +7,7 @@ yellow -- #f8bf00
 light grey -- #ededed
 dark grey -- #b9bbc3
 
-fonts
-
-
-
-
 */
-
-html {
-  font-size: 16px;
-}
-
-
 
 /* Typography */
 
@@ -32,17 +21,53 @@ h2 {
   font-size: 2.25em;
 }
 
-h3 {
+h3, h4 {
   font-family: 'Shrikhand', cursive;
   font-size: 1.875em;
-}
-
-nav a {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.5em;
 }
 
 p {
   font-family: 'Lato', sans-serif;
   font-size: 1.125em;
+  line-height: 1.285;
+}
+
+/* Global styles */
+
+html {
+  font-size: 16px;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header styles */
+
+nav a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+nav a:hover {
+	color: #f8bf00;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0; /* Position the navbar at the top of the page */
+	padding-top: .8em;
+	padding-bottom: .8em;
+  max-height: 100px;
 }
